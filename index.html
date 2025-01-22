@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calcule nobreak</title>
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,10 +16,11 @@
         <p>Aqui você poderá calcular a quantidade de equipamentos que seu nobreak aguenta</p>
 
     </header>
-    <nav>
+
+    <!-- <nav> 
         <a href="index.html">Home</a>
         <a href="#">Outros calculos</a>
-    </nav>
+    </nav> -->
     
     <main>
         <div>
@@ -29,21 +29,22 @@
         </div>
         <div>
             <p>Aparelho 01</p>
-            <input type="number" name="aparelho01" id="aparelho01" placeholder="Potencia do Nobreak">
+            <input type="number" name="wattsaparelho01" id="wattsaparelho01" placeholder="Potencia do Aparelho">
         </div>
 
         <div>
             <p>Aparelho 02</p>
-            <input type="number" name="aparelho01" id="aparelho01" placeholder="Potencia do Nobreak">
-        </div>
-
-        <div onclick="addaparelho()">
-            <button>Adicionar mais aparelho</button>
+            <input type="number" name="wattsaparelho02" id="wattsaparelho02" placeholder="Potencia do Aparelho">
         </div>
 
         <div>
-            <button onclick="calcular()">Calcular</button>
-            <P>RESULTADO</P>
+            <input type="button" value="Adicionar aparelho" onclick="addaparelho()">
+            <P id="xxx">RESULTADO</P>
+        </div>
+
+        <div>
+            <input type="button" value="Calcular" onclick="calcular()">
+            <div id="res">RESULTADO</div>
         </div>
 
     </main>
