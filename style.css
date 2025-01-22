@@ -1,0 +1,72 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--fonte-padrao);
+
+}
+
+:root {
+    --cor0: #2ABBC0;
+    --cor1: #399396;
+    --cor2: #0CE4EA;
+    --cor3: #3B696B;
+    --cor4: #314445;
+    --cor5: #2D3333;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+
+
+
+body {
+    background-image: linear-gradient(to top, var(--cor5), var(--cor1));
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: var(--cor4);
+    padding: 40px 0px 40px 0px;
+    text-align: center;
+    color: white;
+}
+
+nav {
+    background-color: var(--cor3);
+    padding: 10px 0px 10px 20px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    margin-right: 1em;
+}
+
+main {
+    margin: auto;
+    background-color: white;
+    box-shadow: 11px 11px 40px 2px rgba(255, 255, 255, 0.637);
+    text-align: center;
+    max-width: 700px;
+    border-radius: 0px 0px 30px 30px;
+}
+
+div {
+    padding: 20px;
+}
+
+div > p {
+    padding: 10px;
+}
+
+input {
+    width: 170px;
+    height: 25px;
+    text-align: center;
+    font-size: 1em;
+}
+
+p {
+    color: var(--cor1);
+    font-weight: bolder;
+}

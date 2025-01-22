@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Como Surgiu o mascote do Android</title>
+    <title>calcule nobreak</title>
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -13,37 +13,40 @@
 
     <header>
 
-        <h1>SITE DE INVESTIMENTO</h1>
-        <p>Aqui você poderá guardar seus lançamentos e organizar suas finanças</p>
+        <h1>QUANTOS EQUIPAMENTOS MEU NOBREAK AGUENTA?</h1>
+        <p>Aqui você poderá calcular a quantidade de equipamentos que seu nobreak aguenta</p>
 
     </header>
     <nav>
         <a href="index.html">Home</a>
-        <a href="#">Total de Moedas</a>
-        <a href="#">Base de dados</a>
+        <a href="#">Outros calculos</a>
     </nav>
     
     <main>
-        <div id="login-formulario">
-            <h2>login</h2>
-            <input type="text" id="login-username" placeholder="Nome de Usuário">
-            <input type="password" id="login-password" placeholder="Senha">
-            <button onclick="login()">Entrar</button>
+        <div>
+            <p>Digite aqui a Potencia do Nobreak</p>
+            <input type="number" name="pot-nobreak" id="pot-nobreak" placeholder="Potencia do Nobreak">
         </div>
-        <div id="register-formulario">
-            <h2>Registrar</h2>
-            <input type="text" id="register-username" placeholder="Nome de Usuário">
-            <input type="password" id="register-password" placeholder="Senha">
-            <button onclick="register()">Cadastrar</button>
+        <div>
+            <p>Aparelho 01</p>
+            <input type="number" name="aparelho01" id="aparelho01" placeholder="Potencia do Nobreak">
         </div>
 
-        
+        <div>
+            <p>Aparelho 02</p>
+            <input type="number" name="aparelho01" id="aparelho01" placeholder="Potencia do Nobreak">
+        </div>
+
+        <div onclick="addaparelho()">
+            <button>Adicionar mais aparelho</button>
+        </div>
+
+        <div>
+            <button onclick="calcular()">Calcular</button>
+            <P>RESULTADO</P>
+        </div>
 
     </main>
-
-    <footer>
-        <p>Site Criado por <a href="https://github.com/Bruno70i" target="_blank">Bruno Nascimento</a></p>
-    </footer>
 
     <script src="main.js"></script>   
 
