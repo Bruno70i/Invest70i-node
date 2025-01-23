@@ -3,7 +3,7 @@ function addaparelho() {
 
     input.style.margin = "10px"
     input.type = 'number'
-    input.innerHTML = 'hello'
+    input.innerHTML = '<input type="number" name="abc" id="abc" placeholder="casa veder">'
 
     document.getElementById('new-aparelho').appendChild(input)
 }
@@ -17,3 +17,4 @@ function calcular() {
     res.innerHTML = `O resultado da soma de ${valor1} e ${valor2} é ${s}`
     
 }
+
